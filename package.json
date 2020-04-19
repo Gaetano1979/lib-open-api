@@ -1,0 +1,38 @@
+{
+  "name": "lib-open-api",
+  "version": "1.0.0",
+  "description": "prima libreria api open source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w",
+    "dev-nodemon": "nodemon ./dist",
+    "start": "node ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaetano1979/lib-open-api.git"
+  },
+  "keywords": [
+    "open source",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Gaetano Sabino <gaetano@webappgs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gaetano1979/lib-open-api/issues"
+  },
+  "homepage": "https://github.com/Gaetano1979/lib-open-api#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "rxjs": "^6.5.5",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nock": "^12.0.3",
+    "nodemon": "^2.0.3"
+  }
+}
