@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "prima libreria api open source",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "mocha",
     "dev": "tsc -w",

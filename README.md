@@ -1,5 +1,8 @@
 # Api tempo per nome, zipCode e cordinate
 Libreria per ricevere le informazioni di una determinta citta.
+## Istalacion
+``npm install lib-open-api --save``
+``npm i lib-open-api --save``
 
 ## Uso
 ### Come importarlo per js e ts
