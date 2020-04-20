@@ -2,9 +2,9 @@
   "name": "lib-open-api",
   "version": "1.0.0",
   "description": "prima libreria api open source",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "dev": "tsc -w",
     "dev-nodemon": "nodemon ./dist",
     "start": "node ./dist"

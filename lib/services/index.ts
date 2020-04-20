@@ -44,7 +44,7 @@ export class ApiTemp {
     buscarPorNome(nome: string, codPaese: string = 'it'):Promise<ApiInterface> {
         let paese = `q=${nome},`;
         let lang = `lang=${this.lang}`;
-        return axios.get<ApiInterface>(`${this.Api_key}${paese}${codPaese}&$unit=${this.units}&appid=${key}&${lang}`)
+        return axios.get<ApiInterface>(`${LOCAL_URL}${paese}${codPaese}&$unit=${this.units}&appid=${this.Api_key}&${lang}`)
             .then(response => {
                 return response.data;
             })
@@ -60,7 +60,7 @@ export class ApiTemp {
         let coor: string = 'lat=' + cordinate.lat + '&lon=' + cordinate.lon
         let unit = '&units=' + this.units;
         let lang = '&lang=' + this.lang;
-        return axios.get<ApiInterface>(`${this.Api_key}${coor}${unit}${this.keypers}${lang}`)
+        return axios.get<ApiInterface>(`${LOCAL_URL}${coor}${unit}&appid=${this.Api_key}&${lang}`)
             .then( response => {
                 return response.data;
             })
@@ -74,7 +74,7 @@ export class ApiTemp {
         let unit = '&units=' + this.units;
         let lang = '&lang=' + this.lang;
 
-        return axios.get(`${this.Api_key}${zip}${unit}${this.keypers}${lang}`)
+        return axios.get(`${LOCAL_URL}${zip}${unit}&appid=${this.Api_key}&${lang}`)
             .then(response => response.data)
             .catch(error => error.message);
     }
