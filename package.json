@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Gaetano1979/lib-open-api#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "rxjs": "^6.5.5",
+    "rxjs": "^7.5.5",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
